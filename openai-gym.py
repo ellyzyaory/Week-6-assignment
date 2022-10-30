@@ -44,7 +44,7 @@ for episode in range(num_episodes):
             action = np.argmax(qtable[state,:])
 
         # take action and observe reward
-        new_state, reward, done, _,info = env.step(action)
+        new_state, reward, done, _, info = env.step(action)
 
         # check whether state is an int
         if type(state) == int:
